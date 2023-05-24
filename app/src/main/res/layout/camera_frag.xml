@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#F8E0F1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:src="@drawable/msg_modified" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="카메라 화면"
-        android:textSize="40sp" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/text_tip"
+        android:text="                   사진 찍기 전 준비 !\n\n
+1. 카메라 렌즈를 잘 닦아주세요 !\n
+2. 이미지의 사이즈와 화질을 결정하세요 !\n
+3. 삼분할 격자선을 활용해 보세요 !"
+        android:textSize="15sp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#F6CEEC"
+        android:text="사진 찍기"
+        android:textSize="20sp" />
+
 </LinearLayout>
