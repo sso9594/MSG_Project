@@ -60,46 +60,49 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
         camera_frag = new Camera_frag();
         search_frag = new Search_frag();
         main_frag = new Main_frag();
         rank_frag = new Rank_frag();
         user_frag = new User_frag();
-        
-        setFrag(2); //앱 시작시 화면 설정
+
+        // Check if MainActivity is started from the login screen
+        if (getIntent().hasExtra("fromLogin")) {
+            // Navigate to Main_frag when started from the login screen
+            setFrag(2);
+        } else {
+            setFrag(2); // Set the initial fragment to Main_frag
+        }
     }
 
-    // 프래그먼트 교체 발생 실행문
+    // Fragment replacement occurrence execution statement
     private void setFrag(int n) {
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
-        
+
         switch (n) {
             case 0:
                 ft.replace(R.id.main_frame, camera_frag);
-                ft.commit();
                 break;
 
             case 1:
                 ft.replace(R.id.main_frame, search_frag);
-                ft.commit();
                 break;
 
             case 2:
                 ft.replace(R.id.main_frame, main_frag);
-                ft.commit();
                 break;
 
             case 3:
                 ft.replace(R.id.main_frame, rank_frag);
-                ft.commit();
                 break;
 
             case 4:
                 ft.replace(R.id.main_frame, user_frag);
-                ft.commit();
                 break;
         }
 
+        ft.commit();
     }
 }

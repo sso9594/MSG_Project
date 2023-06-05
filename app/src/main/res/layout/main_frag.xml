@@ -28,7 +28,7 @@
 
         <RelativeLayout
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height="194dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp">
@@ -36,7 +36,7 @@
             <ImageView
                 android:id="@+id/rectangle1"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="205dp"
                 android:layout_marginBottom="30dp"
                 android:clickable="true"
                 android:onClick="onRectangleClicked"
@@ -63,7 +63,7 @@
             <ImageView
                 android:id="@+id/rectangle2"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="170dp"
                 android:clickable="true"
                 android:onClick="onRectangleClicked"
                 android:scaleType="fitXY"
@@ -72,5 +72,14 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시물 작성"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
