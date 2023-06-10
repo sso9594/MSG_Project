@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class login extends AppCompatActivity {
 
     private Button loginButton;
+    private Button signUpButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,19 @@ public class login extends AppCompatActivity {
                 Intent intent = new Intent(login.this, MainActivity.class);
                 startActivity(intent);
                 finish(); // Optional: Close the login activity
+            }
+        });
+
+        signUpButton = findViewById(R.id.btn_Signup);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle the button click event
+                // Navigate to the signup activity or perform desired action
+
+                // Example: Start SignUpActivity
+                Intent intent = new Intent(login.this, signup.class);
+                startActivity(intent);
             }
         });
     }

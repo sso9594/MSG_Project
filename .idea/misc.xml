@@ -5,14 +5,19 @@
       <map>
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/drawable/actionbar_icon.xml" value="0.196" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/drawable/edge.xml" value="0.2015" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/drawable/rounded_rectangle.xml" value="0.2305" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/camera_frag.xml" value="0.1" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/camera_frag.xml" value="0.264" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/login.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/main_frag.xml" value="0.2" />
-        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/main_scroll.xml" value="0.1" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/main_scroll.xml" value="0.152" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/mycomments.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/mylike.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/mypost.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/post.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/rank_frag.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/search_frag.xml" value="0.264" />
+        <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/signup.xml" value="0.264" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/layout/user_frag.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/menu/bottom_menu.xml" value="0.2" />
         <entry key="..\:/Users/gangm/Desktop/MSGProject/app/src/main/res/xml/file_paths.xml" value="0.25364583333333335" />

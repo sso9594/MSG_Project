@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.msgproject">
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -15,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MSGProject">
+
         <activity
             android:name=".login"
             android:label="@string/app_name"
@@ -42,6 +44,22 @@
             android:name=".post"
             android:exported="true" />
 
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+
+        <activity
+            android:name=".mypost"
+            android:exported="true" />
+
+        <activity
+            android:name=".mycomments"
+            android:exported="true" />
+
+        <activity
+            android:name=".mylike"
+            android:exported="true" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.msgproject.fileprovider"
@@ -52,5 +70,4 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
-
 </manifest>

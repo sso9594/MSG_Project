@@ -1,73 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/searchEditText"
-        android:layout_width="288dp"
-        android:layout_height="50sp"
-        android:layout_marginTop="30sp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20sp"
-        android:layout_toLeftOf="@+id/searchButton"
-        android:hint="검색어 입력" />
-
-    <Button
-        android:id="@+id/searchButton"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="50sp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30sp"
-        android:layout_marginRight="10dp"
-        android:text="Search" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="288dp"
+            android:layout_height="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20sp"
+            android:hint="검색어 입력" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="10dp"
+            android:text="Search" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/recent_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/searchEditText"
-        android:layout_marginLeft="15dp"
         android:text="최근 검색어"
         android:textSize="25sp" />
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recent_search"
-        android:layout_marginLeft="15dp"
-        android:id="@+id/recent_search_list1"
-        android:text="샴 고양이"
-        android:textSize="20sp"
-        />
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/recent_search_list1"
-        android:layout_alignTop="@id/recent_search_list1"
-        android:layout_marginStart="10dp"
-        android:id="@+id/recent_search_list2"
-        android:text="삼색이"
-        android:textSize="20sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recent_search_list1"
+            android:text="샴 고양이"
+            android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/recent_search_list2"
-        android:layout_alignTop="@id/recent_search_list1"
-        android:layout_marginStart="10dp"
-        android:id="@+id/recent_search_list3"
-        android:text="박준용"
-        android:textSize="20sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/recent_search_list2"
+            android:text="삼색이"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/recent_search_list3"
+            android:text="박준용"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/recommend_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recent_search_list1"
-        android:layout_marginLeft="15dp"
         android:layout_marginTop="30sp"
         android:text="추천 검색어\n"
         android:textSize="25sp" />
@@ -76,8 +78,6 @@
         android:id="@+id/recommend_search_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recommend_search"
-        android:layout_marginLeft="15dp"
         android:text=" 1. 고양이\n
 2. 양성재\n
 3. 삼색이\n
@@ -86,4 +86,5 @@
         android:textSize="20sp"
         android:lineSpacingExtra="5dp"
         />
-</RelativeLayout>
+
+</LinearLayout>

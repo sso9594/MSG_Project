@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/login_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/msg_2_rem" />
+     <ImageView
+         android:id="@+id/login_img"
+         android:layout_width="321dp"
+         android:layout_height="226dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="50dp"
+         android:src="@drawable/msg_2_rem" />
 
     <EditText
         android:id="@+id/enter_ID"
@@ -50,12 +50,11 @@
         android:background="@android:color/darker_gray" />
 
     <Button
-        android:id="@+id/buttonSignUp"
+        android:id="@+id/btn_Signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_Login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:text="Sign Up" />
-
 </RelativeLayout>
